@@ -1,0 +1,30 @@
+.create{
+    min-height: 100px;
+    min-width: 100px;
+    border:solid 1px black;
+    margin-right: 50px;
+    margin-left: 200px;
+}
+
+
+.container{
+    margin-top: 20px;
+    margin-left: auto;
+    float: left; 
+   
+}
+
+.icon-rules {
+    padding: 10px;
+    background:0000;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+  }
+
+ 
+
+
+  
+  
+  

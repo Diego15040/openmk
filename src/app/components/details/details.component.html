@@ -1,0 +1,52 @@
+<div class="container col-md-9" >
+<div class="card d-inline">
+    <form>
+        <div class="card w-50">  
+          <div class="name">
+            <input type="text" class="form-control" placeholder="ABM name(deberia mostrar el nombre actual)">
+          </div>
+        </div>
+      </form>
+
+      <div class="card w-50"  >
+        <div class="card-body"  >
+            <mat-form-field [style.width.px]=260 >
+                <mat-label>Environment</mat-label>
+                <mat-select disableRipple>
+                  <mat-option value="1">Twitter</mat-option>
+                  <mat-option value="2">Facebook</mat-option>
+                  <mat-option value="3">Instagram</mat-option>
+                  <mat-option value="3">Other</mat-option>
+                </mat-select>
+              </mat-form-field> 
+        </div>
+      </div>
+     
+      
+<div class="card w-50">
+    <div class="card-body">
+      <!--h5 class="font-italic"> Rules</h5-->
+      <h5 class="font-italic lead">Here you con config all the rules and action to be applied on the simulation.</h5>
+      
+      <a class="btn btn-primary col-md-6 text-white" (click)="openRules()">Rules and actions <i class="fa fa-cogs icon-rules"></i></a>
+    </div>
+  </div>
+  
+  <div class="card w-50">
+    <div class="card-body">
+      <!--h5 class="font-italic">Agent</h5-->
+      <h5 class="font-italic lead">Here you can select or add agent to the simulation.</h5>
+      <a class="btn btn-primary col-md-6 text-white" (click)="openAgent()">Agents <i class="fa fa-users icon-rules"></i></a>
+    </div>
+  </div>
+  <div class="card w-50">
+    <div class="card-body">
+      <!--h5 class="font-italic">Variations</h5-->
+      <h5 class="card-text lead">Here you can config especific options for simulation.</h5>
+      <a class="btn btn-primary col-md-6 text-white" (click)="openVariations()">Variations <i class="fa fa-wrench icon-rules"></i></a>
+    </div>
+  </div>
+  
+</div>
+
+</div>

@@ -1,0 +1,56 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-sm-12" style="text-align:right; ">
+            <button  mat-icon-button mat-dialog-close color="warn">
+                <mat-icon>clear</mat-icon>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align: center;">Rules</h1>
+            <mat-checkbox [(ngModel)]="show.retweet">1 retweet per message</mat-checkbox>
+            <br> 
+            <mat-checkbox [(ngModel)]="show.read">1 Read per tweet</mat-checkbox>
+            <br>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+            <button mat-raised-button mat-dialog-close color="primary" >Add rule</button>
+        </div>
+            </div>
+        </div>
+        <br>
+        <br>
+
+            <h1 style="text-align: center;">Actions</h1>
+            <mat-checkbox [(ngModel)]="show.retweet">Retweet rule</mat-checkbox>
+            <br> 
+            <mat-checkbox [(ngModel)]="show.read">Read rule</mat-checkbox>
+            <br>
+            
+          
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+            <button mat-raised-button mat-dialog-close color="primary" >Add action</button>
+        </div>
+            </div>
+        </div>
+            <br>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+            <button mat-raised-button mat-dialog-close color="primary" >Guardar</button>
+        </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+      
+    </div>
+
+</div>

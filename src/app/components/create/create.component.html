@@ -1,0 +1,147 @@
+
+<div class="container col-md-9" >
+<div class="card d-inline">
+    <form>
+    <div class="card w-50 " >  
+          <div class="name">
+            <input type="text" class="form-control" placeholder="ABM name(deberia mostrar el nombre actual)">
+          </div>
+        </div>
+      </form>
+      
+      <div class="card w-50"  >
+        <div class="card-body"  >
+            <mat-form-field [style.width.px]=260 >
+                <mat-label>Environment</mat-label>
+                <mat-select disableRipple>
+                  <mat-option value="1">Twitter</mat-option>
+                  <mat-option value="2">Facebook</mat-option>
+                  <mat-option value="3">Instagram no</mat-option>
+                  <mat-option value="3">Other</mat-option>
+                </mat-select>
+              </mat-form-field> 
+        </div>
+      </div>
+     
+      
+      
+<div class="card w-50 ">
+    <div class="card-body">
+      <!--h5 class="font-italic"> Rules</h5-->
+      <h5 class="font-italic lead"> Here you con config all the rules and action to be applied on the simulation.</h5>
+      <a class="btn btn-primary col-md-6 text-white" (click)="openRules()">Rules and actions <i class="fa fa-cogs icon-rules"></i></a>
+    </div>
+  </div>
+  
+  <div class="card w-50">
+    <div class="card-body">
+      <!--h5 class="font-italic">Agent</h5-->
+      <h5 class="font-italic lead">Here you can select or add agent to the simulation.</h5>
+      <a class="btn btn-primary col-md-6 text-white" (click)="openAgent()">Agents <i class="fa fa-users icon-rules"></i></a>
+    </div>
+  </div>
+  <div class="card w-50">
+    <div class="card-body">
+      <!--h5 class="font-italic">Variations</h5-->
+      <h5 class="font-italic lead" >Here you can config especific options for simulation.</h5>
+      <a class="btn btn-primary col-md-6 text-white" (click)="openVariations()">Variations <i class="fa fa-wrench icon-rules"></i></a>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="container col-md-3 ">
+  <div class="card" style="width: 18.5rem;">
+    <div class="card-body">
+      <h4 class="card-title text-center">Rules and Actions</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+          1 retweet per tweet
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+        <label class="form-check-label" for="defaultCheck2">
+          1..* read per tweet
+        </label>
+      </div>
+    </div>
+  </div>
+  
+  <div class="card text-center" style="width: 18.5rem;">
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr>
+            
+            <th scope="col">Name</th>
+            <th scope="col"> Participation</th>
+            <th scope="col">Followers</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+         
+            <td>Hub</td>
+            <td>50%</td>
+            <td>100-200</td>
+          </tr>
+          <tr>
+            
+            <td>Opinion leader</td>
+            <td>50%</td>
+            <td>300-400</td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="card text-right" style="width: 18.5rem;">
+    <div class="card-body text-center">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+         <label>Retweet after X=10 periods</label>
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" >
+        <label class="form-check-label" for="defaultCheck2">
+          <label>Probability of sharing 25%</label>
+        </label>
+      </div>
+    </div>
+  </div>
+
+  <div class="card text-right" style="width: 18.5rem;">
+    <div class="card-body text-center">
+     
+      <form>
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-radio">
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+              <label class="custom-control-label" for="customRadio1">--|.  Data production</label>
+            </div>
+            <div class="custom-control custom-switch  ">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <label class="custom-control-label" for="customSwitch1">Simulation display</label>
+            </div>
+            <input type="text" class="form-control" placeholder="Number of simulations">
+          </div>
+         
+        </div>
+      </form>
+    </div>
+  </div>
+  <a class="btn btn-primary col-md-10 text-white tex" >Run ABM <i class="fa fa-play icon-rules"></i></a>
+</div>
+
+
+
+
+
+

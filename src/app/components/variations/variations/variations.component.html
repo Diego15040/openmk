@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row" >
+        <div class="col-sm-12" style="text-align:right; ">
+            <button  mat-icon-button mat-dialog-close color="warn">
+                <mat-icon>clear</mat-icon>
+            </button>
+        </div>
+        <div class="container">
+            <div class="row">
+        <div class="col-sm-12">
+            <h1 style="text-align: center;">Variations</h1>
+            <mat-checkbox [(ngModel)]="show.retweet">Probability of sharing message</mat-checkbox>
+            <br> 
+            <mat-form-field class="example-form-field">
+
+                <input matInput type="text" [(ngModel)]="value">
+                <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+              <br>
+            <mat-checkbox [(ngModel)]="show.read">Retweet after x period</mat-checkbox>
+            <br>
+            <mat-form-field class="example-form-field ">
+
+                <input matInput type="text" [(ngModel)]="value2">
+                <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+              <br>
+              <mat-form-field class="example-form-field">
+
+                <input matInput type="text" [(ngModel)]="value3">
+                <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                  <mat-icon>close</mat-icon>
+                </button>
+              </mat-form-field>
+
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="container">
+              <div class="row">
+                  <div class="col text-center">
+          <button mat-raised-button mat-dialog-close color="primary" >Guardar</button>
+      </div>
+          </div>
+      </div>
+        </div>
+    </div>
+    </div>
+      
+    </div>
+
+</div>
