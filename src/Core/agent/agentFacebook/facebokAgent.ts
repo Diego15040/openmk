@@ -1,26 +1,25 @@
 class facebookAgent extends agent{
 
     //lectura puede ser un numero determinado mayor que 1 menos la probabilidad de lectura
-    //retweet puede ser un numero determinado mayor que 1 menos una influencia 
+    //retweet puede ser un numero determinado mayor que 1 menos una influencia
    protected participation: number;
-    
-    
+
+
 
    constructor(participation: number, state: string ,influence: number,){
     super(participation, state, influence);
-       participation=participation;
-      
+
    }
 
    createAction(): any{
-       
+
     console.log('crear accion');
 
    }
 
    createRule(): any{
 
-    
+
 
     console.log('crear regla');
 
@@ -34,9 +33,9 @@ class facebook1 extends facebookAgent{
     constructor( participation: number, state: string, influence: number,characteristicone: string, ){
         super(participation, state, influence);
         this.characteristicone=characteristicone;
-        
+
     }
-    
+
 }
 
 class facebook2 extends facebookAgent{
@@ -50,8 +49,8 @@ class facebook2 extends facebookAgent{
 class facebook3 extends facebookAgent{
         constructor(participation: number, state: string, influence: number,){
             super(participation, state, influence);
-        
+
         }
-    
+
 
 }
