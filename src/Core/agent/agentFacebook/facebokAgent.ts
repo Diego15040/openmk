@@ -12,7 +12,7 @@ class facebookAgent extends agent{
    }
 
    createAction(): any{
-
+//asdasFASfsdafgasdgasdsadfsdJM.HVFBKasdjl<hvbcfhilkwasdBFVKJISdbfdkijwRBHJRSWBFGÑIKAWRSEBÑOLN
     console.log('crear accion');
 
    }
