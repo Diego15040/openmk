@@ -1,6 +1,7 @@
+// tslint:disable-next-line:class-name
 class whatsappAgent extends agent{
     protected noc: boolean
-    
+
 
    constructor(noc: boolean, influence: number, state: string, followers: number){
        noc=noc;
@@ -8,7 +9,7 @@ class whatsappAgent extends agent{
    }
 
    createAction(): any{
-       
+
     console.log('crear accion');
 
    }
@@ -27,8 +28,8 @@ class whatsapp1 extends whatsappAgent{
     constructor(  noc: boolean, influence: number, state:string,followers: number, whatsapp: string,){
         super( noc,influence, state,followers );
         this.whatsapp=whatsapp;
-        
+
     }
-    
+
 }
 

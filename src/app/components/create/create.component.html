@@ -4,7 +4,7 @@
     <form>
     <div class="card w-50 " >  
           <div class="name">
-            <input type="text" class="form-control" placeholder="ABM name(deberia mostrar el nombre actual)">
+            <input type="text" class="form-control" placeholder="ABM name">
           </div>
         </div>
       </form>
@@ -70,7 +70,7 @@
   </div>
   
   <div class="card text-center" style="width: 18.5rem;">
-    <div class="card-body">
+    <div class="card-body" id="agents">
       <table class="table">
         <thead>
           <tr>
@@ -99,7 +99,7 @@
     </div>
   </div>
   
-  <div class="card text-right" style="width: 18.5rem;">
+  <div class="card text-right" style="width: 18.5rem; " id="variations">
     <div class="card-body text-center">
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
@@ -123,11 +123,11 @@
         <div class="row">
           <div class="col">
             <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-              <label class="custom-control-label" for="customRadio1">--|.  Data production</label>
+              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" >
+              <label class="custom-control-label" for="customRadio1" >--|.  Data production</label>
             </div>
             <div class="custom-control custom-switch  ">
-              <input type="checkbox" class="custom-control-input" id="customSwitch1">
+              <input type="checkbox" class="custom-control-input" id="customSwitch1" >
               <label class="custom-control-label" for="customSwitch1">Simulation display</label>
             </div>
             <input type="text" class="form-control" placeholder="Number of simulations">
@@ -136,8 +136,9 @@
         </div>
       </form>
     </div>
+    <a class="btn btn-primary col-md-10 text-white tex " id="Run"  >Run ABM <i class="fa fa-play icon-rules"></i></a>
   </div>
-  <a class="btn btn-primary col-md-10 text-white tex" >Run ABM <i class="fa fa-play icon-rules"></i></a>
+  
 </div>
 
 
